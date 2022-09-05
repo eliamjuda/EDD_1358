@@ -1,4 +1,4 @@
-class ArregloADT{
+export class ArregloADT{
     #arr;
     
       constructor(tamanio){
@@ -39,25 +39,6 @@ class ArregloADT{
   
   }
   
-  const array1 = new ArregloADT(5);
-  
-  console.log(array1.getLongitud())
-  array1.setElemento(0, "Hola")
-  array1.setElemento(1, 23)
-  array1.setElemento(2, "Eliam")
-  array1.setElemento(3, 20.98)
-  array1.setElemento(4, "Castillo")
-  
-  const array2 = new ArregloADT(5);
-  
-  console.log(array1.getLongitud())
-  array2.setElemento(0, "Adios")
-  array2.setElemento(1, 1)
-  array2.setElemento(2, "Eliam")
-  array2.setElemento(3, 20.98)
-  array2.setElemento(4, array1)
-  
-  console.log(array2.toString())
   
   
   

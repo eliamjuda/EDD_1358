@@ -1,0 +1,82 @@
+:root{
+    --background: rgb(14, 13, 14);
+    --firstColor: rgb(210, 194, 194);
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--firstColor);
+}
+
+h2,h1{
+    font-weight: 400;
+    margin: 30px;
+}
+
+
+
+header{
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxWrapper{
+    background-color: rgb(29, 29, 30);
+    width: 500px;
+    min-height: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    align-self: center;
+}
+
+input, select{
+    height: 30px;
+    border-radius: 6px;
+    margin: 10px;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+input[type=submit]{
+    color: var(--firstColor);
+    background-color: #444;
+    height: 40px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(43, 42, 42);
+}
+
+select{
+    width: 140px;
+    height: 30px;
+    border: 1px solid rgb(169, 160, 160);
+    background-color: #444;
+    color: var(--firstColor);
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(169, 160, 160);
+    background-color: #444;
+    color: var(--firstColor);
+}
