@@ -37,7 +37,7 @@ class Queue {
         return data;
     }
     
-    getSize() {
+    length() {
         // End siempre será mayor o igual que Front, el resultado son los valores restantes en la cola
         return this.end - this.front;
     }
@@ -51,15 +51,7 @@ class Queue {
         }
     }
     
-    peek(){
-        if ( this.getSize() === 0 ){
-            return null;
-        }
-        // Se retorna el primer valor de la cola (front)
-        return this.items[this.front];
-    }
-    
-    print(){
+    to_string(){
         if (this.getSize() === 0){
             return null
         }
@@ -78,7 +70,8 @@ class Queue {
  queue.enqueue("eliam")
  queue.enqueue(3)
  queue.enqueue(4)
- console.log(queue.print())
+ queue.dequeue()
+ console.log(queue.to_string())
  
  
  
