@@ -44,7 +44,7 @@ class Queue {
     
     // Si get Size es 0, entonces está vacía, sino no lo está.
     isEmpty() {
-        if ( this.getSize() === 0 ){
+        if ( this.length() === 0 ){
             return true;
         } else {
             return false;
@@ -52,7 +52,7 @@ class Queue {
     }
     
     to_string(){
-        if (this.getSize() === 0){
+        if (this.length() === 0){
             return null
         }
         let result = '';
